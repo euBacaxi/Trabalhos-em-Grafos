@@ -5,7 +5,7 @@ class MazeFunctions:
     self.matriz = self.leArquivoMatriz(arquivo)
     self.startNode, self.endNode = None, None
     self.coordinates: list[tuple[int, int]] = []
-    self.graph = Graph(self.qtd_de_elementos(self.matriz))
+    self.graph = Graph(self.qtd_de_elementos(self.matriz),0,[])
 
 
   def leArquivoMatriz(self, arquivo):
